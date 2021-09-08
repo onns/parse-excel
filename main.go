@@ -35,7 +35,7 @@ func parseExcel(fileName string) (res map[string]*model.Info, date string) {
 		fmt.Println(err)
 		return
 	}
-	rows, err := f.GetRows("Sheet1")
+	rows, err := f.GetRows("支部数据")
 	for i, row := range rows {
 		if i == 0 {
 			continue
